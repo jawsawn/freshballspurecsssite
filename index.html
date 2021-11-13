@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>hi</title>
+
+    <style>
+        :root {
+            --colorid: rgb(141, 141, 211);
+        }
+
+        div {
+            text-align: center;
+            color: currentColor;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--colorid);
+        }
+
+        .trianglebox {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border-right: 50px solid rgb(224, 66, 38);
+            border-left: 50px solid rgb(224, 66, 38);
+            border-bottom: 100px solid;
+
+        }
+
+        .box {
+
+            border-radius: 50px;
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            box-shadow: 0 20px 60px 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 400%;
+            animation: spinner 10s linear infinite;
+        }
+
+        @keyframes spinner {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .triangle {
+            width: 0px;
+            height: 0px;
+            border-right: 50px solid transparent;
+            border-left: 50px solid transparent;
+            border-bottom: 100px solid;
+            zoom: 2;
+            margin: auto;
+            position: sticky;
+        }
+
+        .shadiv {
+            z-index: 1;
+            position: absolute;
+            border-radius: 50px;
+            width: 200px;
+            height: 200px;
+
+            box-shadow: 0 20px 60px 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar {
+            background-color: gray;
+            width: 100%;
+            height: 50px;
+            top: 0;
+            left: 0;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 30px;
+
+        }
+
+        .headfont {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            transform: scale(8, 2.5);
+            background-image: linear-gradient(90deg, red, blue);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+
+        }
+
+        .list1 {
+            
+            display: table;
+            
+            margin: 100px auto 0px auto;
+        }
+    </style>
+
+    <script>
+        function changecolor(cid) {
+            document.querySelector(':root').style.setProperty('--colorid', cid)
+        }
+        var colorWell;
+        var defaultColor = "#0000ff";
+
+        window.addEventListener("load", startup, false);
+        function startup() {
+            colorWell = document.querySelector("#colorWell");
+            colorWell.value = defaultColor;
+            colorWell.addEventListener("input", updateFirst, false);
+            colorWell.addEventListener("change", updateAll, false);
+            colorWell.select();
+        }
+        function updateFirst(event) {
+            var p = document.querySelector("p");
+
+            if (p) {
+                p.style.color = event.target.value;
+            }
+        }
+        function updateAll(event) {
+            document.querySelectorAll("p").forEach(function (p) {
+                p.style.color = event.target.value;
+            });
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <p class="headfont">WOTS A WEB PAGE??????</p>
+    </div>
+    <div class="list2">
+        <ul class="list1">
+            <li> <a href="switches.html">switches</a></li>
+            <li>poggers</li>
+            <li>poggers2</li>
+            <li>pog.final</li>
+        </ul>
+    </div>
+    <div>
+        <h1>
+            welcome to the cum zone
+        </h1>
+
+        only cum inside anime girls
+
+        <h6>
+            quivering clit
+        </h6>
+        <p>
+            double jointed pussy
+        </p>
+        <h2>
+            fresh balls
+        </h2>
+        <p>
+            elegant ejaculation
+        </p>
+    </div>
+
+    <div>
+        <button onclick="changecolor('red')">turn to red</button>
+        <button onclick="changecolor('green')">turn to red</button>
+    </div>
+    <div>
+        <label for="colorWell">Color:</label>
+        <input type="color" value="#ff0000" id="colorWell">
+        <p>Watch the paragraph colors change when you adjust the color picker.
+            As you make changes in the color picker, the first paragraph's
+            color changes, as a preview (this uses the <code>input</code>
+            event). When you close the color picker, the <code>change</code>
+            event fires, and we detect that to change every paragraph to
+            the selected color.
+        </p>
+    </div>
+    <div class="trianglebox"></div>
+    <br>
+    <div class="box">🦩</div>
+    <br>
+    <div class="triangle"></div>
+    <br>
+    <a href="amogus.html">extra sussy content do not click</a>
+</body>
+<html>
