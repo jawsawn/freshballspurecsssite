@@ -1,11 +1,11 @@
 {
-  "name": "freshballs",
+  "name": "my-static-site",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This will load any static html site",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "harp server --port $PORT"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "harp": "*"
+  }
 }
